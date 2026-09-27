@@ -1,0 +1,415 @@
+/* ==========================================================================
+   GLOBAL CSS THEMING SYSTEM - MOHAMMAD FAROOQ PORTFOLIO
+   5 Rich Color Themes switchable instantly via [data-theme]
+   ========================================================================== */
+
+:root,
+[data-theme="cyber"] {
+  /* Cyber Neon Dark Theme (Default) */
+  --bg-primary: #080c16;
+  --bg-secondary: #0e1526;
+  --bg-card: rgba(16, 24, 43, 0.75);
+  --bg-card-hover: rgba(22, 33, 58, 0.85);
+  --bg-elevated: #162035;
+  --bg-glass: rgba(11, 17, 30, 0.8);
+  --bg-input: rgba(14, 21, 38, 0.9);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-primary: #00f2fe;
+  --accent-secondary: #4facfe;
+  --accent-hover: #38bdf8;
+  --accent-rgb: 0, 242, 254;
+  --accent-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  --accent-glow: rgba(0, 242, 254, 0.35);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(0, 242, 254, 0.18);
+  --border-hover: rgba(0, 242, 254, 0.5);
+
+  --badge-bg: rgba(0, 242, 254, 0.12);
+  --badge-text: #38bdf8;
+  --badge-border: rgba(0, 242, 254, 0.25);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 24px rgba(0, 242, 254, 0.25);
+
+  --status-online: #10b981;
+}
+
+[data-theme="luxury"] {
+  /* Obsidian Gold / Royal Bronze Theme */
+  --bg-primary: #0a0b0f;
+  --bg-secondary: #12141c;
+  --bg-card: rgba(20, 23, 33, 0.8);
+  --bg-card-hover: rgba(28, 32, 46, 0.9);
+  --bg-elevated: #1a1e2b;
+  --bg-glass: rgba(12, 13, 18, 0.82);
+  --bg-input: rgba(18, 20, 28, 0.9);
+
+  --text-primary: #fbfbfb;
+  --text-secondary: #e2e4e9;
+  --text-muted: #a6abb8;
+  --text-dim: #717786;
+
+  --accent-primary: #fbbf24;
+  --accent-secondary: #f59e0b;
+  --accent-hover: #fcd34d;
+  --accent-rgb: 251, 191, 36;
+  --accent-gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  --accent-glow: rgba(251, 191, 36, 0.35);
+
+  --border-subtle: rgba(251, 191, 36, 0.12);
+  --border-card: rgba(251, 191, 36, 0.22);
+  --border-hover: rgba(251, 191, 36, 0.55);
+
+  --badge-bg: rgba(251, 191, 36, 0.12);
+  --badge-text: #fde68a;
+  --badge-border: rgba(251, 191, 36, 0.3);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 24px rgba(251, 191, 36, 0.25);
+
+  --status-online: #34d399;
+}
+
+[data-theme="nordic"] {
+  /* Nordic Frost Clean Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #edf2f7;
+  --bg-card: rgba(255, 255, 255, 0.92);
+  --bg-card-hover: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-glass: rgba(248, 250, 252, 0.88);
+  --bg-input: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+
+  --accent-primary: #4f46e5;
+  --accent-secondary: #6366f1;
+  --accent-hover: #4338ca;
+  --accent-rgb: 79, 70, 229;
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --accent-glow: rgba(79, 70, 229, 0.25);
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-card: rgba(79, 70, 229, 0.16);
+  --border-hover: rgba(79, 70, 229, 0.4);
+
+  --badge-bg: rgba(79, 70, 229, 0.08);
+  --badge-text: #4338ca;
+  --badge-border: rgba(79, 70, 229, 0.2);
+
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 32px rgba(15, 23, 42, 0.1);
+  --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.2);
+
+  --status-online: #10b981;
+}
+
+[data-theme="emerald"] {
+  /* Matrix / Emerald Terminal Dark Theme */
+  --bg-primary: #040e0a;
+  --bg-secondary: #081912;
+  --bg-card: rgba(10, 29, 21, 0.78);
+  --bg-card-hover: rgba(14, 40, 29, 0.88);
+  --bg-elevated: #113325;
+  --bg-glass: rgba(5, 17, 12, 0.84);
+  --bg-input: rgba(9, 25, 18, 0.9);
+
+  --text-primary: #f0fdf4;
+  --text-secondary: #bbf7d0;
+  --text-muted: #86efac;
+  --text-dim: #4ade80;
+
+  --accent-primary: #10b981;
+  --accent-secondary: #34d399;
+  --accent-hover: #059669;
+  --accent-rgb: 16, 185, 129;
+  --accent-gradient: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  --accent-glow: rgba(16, 185, 129, 0.35);
+
+  --border-subtle: rgba(16, 185, 129, 0.12);
+  --border-card: rgba(16, 185, 129, 0.22);
+  --border-hover: rgba(16, 185, 129, 0.55);
+
+  --badge-bg: rgba(16, 185, 129, 0.12);
+  --badge-text: #a7f3d0;
+  --badge-border: rgba(16, 185, 129, 0.28);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 24px rgba(16, 185, 129, 0.25);
+
+  --status-online: #34d399;
+}
+
+[data-theme="sunset"] {
+  /* Synthwave / Sunset Horizon Dark Theme */
+  --bg-primary: #0d061c;
+  --bg-secondary: #170c2e;
+  --bg-card: rgba(29, 15, 54, 0.78);
+  --bg-card-hover: rgba(39, 20, 71, 0.88);
+  --bg-elevated: #28144b;
+  --bg-glass: rgba(14, 7, 29, 0.85);
+  --bg-input: rgba(24, 12, 45, 0.9);
+
+  --text-primary: #fff1f2;
+  --text-secondary: #fecdd3;
+  --text-muted: #fda4af;
+  --text-dim: #fb7185;
+
+  --accent-primary: #f43f5e;
+  --accent-secondary: #ec4899;
+  --accent-hover: #fb7185;
+  --accent-rgb: 244, 63, 94;
+  --accent-gradient: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #d946ef 100%);
+  --accent-glow: rgba(244, 63, 94, 0.35);
+
+  --border-subtle: rgba(244, 63, 94, 0.12);
+  --border-card: rgba(244, 63, 94, 0.22);
+  --border-hover: rgba(244, 63, 94, 0.55);
+
+  --badge-bg: rgba(244, 63, 94, 0.12);
+  --badge-text: #ffe4e6;
+  --badge-border: rgba(244, 63, 94, 0.28);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 24px rgba(244, 63, 94, 0.25);
+
+  --status-online: #10b981;
+}
+
+/* ==========================================================================
+   GLOBAL RESET & TYPOGRAPHY
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: #0b0f19;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: 6px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* ==========================================================================
+   SHARED UTILITIES & COMMON BUTTONS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--accent-gradient);
+  color: #0b0f19 !important;
+  box-shadow: 0 4px 16px var(--accent-glow);
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px var(--accent-glow);
+  filter: brightness(1.05);
+}
+
+.btn-secondary {
+  background: var(--bg-elevated);
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-card);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-card);
+}
+
+.btn-outline:hover {
+  background: var(--badge-bg);
+  color: var(--accent-primary) !important;
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-xs {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.text-highlight {
+  color: var(--accent-primary);
+  font-weight: 700;
+}
+
+.text-success {
+  color: var(--status-online);
+}
+
+.section {
+  padding: 6rem 1.5rem;
+  position: relative;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-subtitle {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.section-description {
+  max-width: 680px;
+  margin: 0.85rem auto 0;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--accent-gradient);
+  border-radius: 9999px;
+  margin: 1.25rem auto 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
